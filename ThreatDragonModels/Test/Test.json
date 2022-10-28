@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "title": "Test",
+    "owner": "RaccoonJoe"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "testo",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0
+      }
+    ]
+  }
+}
