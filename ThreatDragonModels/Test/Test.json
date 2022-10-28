@@ -71,8 +71,8 @@
                 "height": 100
               },
               "position": {
-                "x": 840,
-                "y": 184
+                "x": 839,
+                "y": 183
               },
               "angle": 0,
               "id": "4a113252-2718-4c29-8d8d-7b4d08844598",
@@ -83,7 +83,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "process 3"
+                  "text": "Backend"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -104,12 +104,13 @@
               "id": "b7aeb98d-8b1c-49f9-97e6-6e23ffba1e52",
               "z": 5,
               "hasOpenThreats": false,
+              "storesCredentials": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "store 4"
+                  "text": "DB"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -129,16 +130,38 @@
               "angle": 0,
               "id": "90d283d1-c9ab-4dc1-ab68-45d1094eb3c0",
               "z": 6,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Denial of service",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic spoofing threat",
+                  "threatId": "95414a4c-2465-44ee-97cf-197c870ee557"
+                },
+                {
+                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
+                  "title": "Generic tampering threat",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic tampering threat",
+                  "threatId": "25140ed1-56da-433a-840d-7c88ddcce927"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "process 4"
+                  "text": "Proxy"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -193,7 +216,12 @@
               "target": {
                 "id": "4a113252-2718-4c29-8d8d-7b4d08844598"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 773,
+                  "y": 234
+                }
+              ],
               "id": "5b760bc4-4ed8-4357-b328-24815de72c69",
               "labels": [
                 {
